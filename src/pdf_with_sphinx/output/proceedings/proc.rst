@@ -38,50 +38,35 @@ For writing simple math stuff without numbering we can use
 Writing Code
 -------------
 
-For writing code we can do it like this
+For writing code we can do it like this:
 
 
-.. code-block:: python    
+.. code-block:: python
 
-  :linenos:
-  :caption: Watershed with Mask in 3D  
-  def WatershedwithMask3D(Image, Label, mask, grid):
-    properties = measure.regionprops(Label, Image) 
-    binaryproperties = 
-    measure.regionprops(label(mask), Image) 
-    Coordinates = [prop.centroid for prop in properties] 
-    BinaryCoordinates = [prop.centroid for 
-    prop in binaryproperties]
-    Binarybbox =
-    [prop.bbox for prop in binaryproperties]
-    Coordinates = sorted(Coordinates , 
-    key=lambda k: [k[0], k[1], k[2]]) 
-
-    if len(Binarybbox) > 0:    
-         for i in range(0, len(Binarybbox)):
+  def iou3D(box_unet, centroid_star):
+    
+    ndim = len(centroid_star)
+    inside = False
+    
+    Condition = [Conditioncheck(centroid_star, box_unet,
+     p, ndim)
+     for p in range(0,ndim)]
         
-            box = Binarybbox[i]
-            inside = [iou3D(box, star) 
-            for star in Coordinates]
+    inside = all(Condition)
+    
+    return inside
+  
+  def Conditioncheck(centroid_centroid, box_unet, 
+         p, ndim):
 
-            if not any(inside) :
-                  Coordinates.append(BinaryCoordinates[i])    
-         
+    condition = False
 
-    Coordinates.append((0,0,0))
-    Coordinates = np.asarray(Coordinates)
-    coordinates_int = np.round(Coordinates).astype(int) 
+    if centroid_star[p] >= box_unet[p]
+    and centroid_star[p] <= box_unet[p + ndim]:
 
-    markers_raw = np.zeros_like(Image) 
-    markers_raw[tuple(coordinates_int.T)] = 1
-    + np.arange(len(Coordinates)) 
-    markers = morphology.dilation(
-    markers_raw.astype('uint16'), morphology.ball(2))
+         condition = True
 
-    watershedImage = watershed(-Image, markers, 
-    mask = mask.copy()) 
-    return watershedImage, markers
-      
+    return condition
 
 Putting a figure
 ------------------
