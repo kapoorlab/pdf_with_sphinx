@@ -89,7 +89,7 @@ Putting a figure
 For adding a figure it is like 
 
 .. figure:: Figures/radiation.jpg
-   :width: 70%
+   :width: 10%
    :align: center
    :name: radiation
 
