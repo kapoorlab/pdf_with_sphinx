@@ -1,0 +1,61 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WCV{\etalchar{+}}20}
+
+\bibitem[BM18]{Beucher2018}
+S.~Beucher and F.~Meyer.
+\newblock The morphological approach to segmentation: The watershed
+  transformation.
+\newblock 2018.
+\newblock \href {https://doi.org/10.1201/9781482277234-12}
+  {\path{doi:10.1201/9781482277234-12}}.
+
+\bibitem[ESC{\etalchar{+}}18]{eschweiler2018}
+Dennis Eschweiler, Thiago~V. Spina, Rohan~C. Choudhury, Elliot Meyerowitz,
+  Alexandre Cunha, and Johannes Stegmaier.
+\newblock Cnn-based preprocessing to optimize watershed-based cell segmentation
+  in 3d confocal microscopy images, 2018.
+\newblock \href {https://arxiv.org/abs/1810.06933} {\path{arXiv:1810.06933}},
+  \href {https://doi.org/10.1109/isbi.2019.8759242}
+  {\path{doi:10.1109/isbi.2019.8759242}}.
+
+\bibitem[RFB15]{Ronn2015}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
+\newblock U-net: Convolutional networks for biomedical image segmentation.
+\newblock In Nassir Navab, Joachim Hornegger, William~M. Wells, and
+  Alejandro~F. Frangi, editors, {\em Medical Image Computing and
+  Computer-Assisted Intervention -- MICCAI 2015}, pages 234--241, Cham, 2015.
+  Springer International Publishing.
+
+\bibitem[SWBM18]{schmidt2018}
+Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers.
+\newblock Cell detection with star-convex polygons.
+\newblock In {\em Medical Image Computing and Computer Assisted Intervention -
+  {MICCAI} 2018 - 21st International Conference, Granada, Spain, September
+  16-20, 2018, Proceedings, Part {II}}, pages 265--273, 2018.
+\newblock \href {https://doi.org/10.1007/978-3-030-00934-2_30}
+  {\path{doi:10.1007/978-3-030-00934-2_30}}.
+
+\bibitem[WCV{\etalchar{+}}20]{Wolny2020}
+Adrian Wolny, Lorenzo Cerrone, Athul Vijayan, Rachele Tofanelli, Amaya
+  Vilches~Barro, Marion Louveaux, Christian Wenzl, Susanne Steigleder,
+  Constantin Pape, Alberto Bailoni, Salva Duran-Nebreda, George Bassel, Jan~U.
+  Lohmann, Fred~A. Hamprecht, Kay Schneitz, Alexis Maizel, and Anna Kreshuk.
+\newblock Accurate and versatile 3d segmentation of plant tissues at cellular
+  resolution.
+\newblock {\em bioRxiv}, 2020.
+\newblock \href
+  {https://arxiv.org/abs/https://www.biorxiv.org/content/early/2020/01/18/2020.01.17.910562.full.pdf}
+  {\path{arXiv:https://www.biorxiv.org/content/early/2020/01/18/2020.01.17.910562.full.pdf}},
+  \href {https://doi.org/10.1101/2020.01.17.910562}
+  {\path{doi:10.1101/2020.01.17.910562}}.
+
+\bibitem[WSH{\etalchar{+}}20]{weigert2020}
+Martin Weigert, Uwe Schmidt, Robert Haase, Ko~Sugawara, and Gene Myers.
+\newblock Star-convex polyhedra for 3d object detection and segmentation in
+  microscopy.
+\newblock In {\em The IEEE Winter Conference on Applications of Computer Vision
+  (WACV)}, March 2020.
+\newblock \href {https://doi.org/10.1109/WACV45572.2020.9093435}
+  {\path{doi:10.1109/WACV45572.2020.9093435}}.
+
+\end{thebibliography}

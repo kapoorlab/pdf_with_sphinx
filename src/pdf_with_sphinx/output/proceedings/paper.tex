@@ -176,50 +176,88 @@
 \providecommand*\DUrolecite[1]{\cite{#1}}
 
 
-\subsection{Introduction%
-  \label{introduction}%
+\subsection{Writing Equations%
+  \label{writing-equations}%
 }
 
 
 This is how we can type labelled equations\begin{equation}
 \label{eq-schrodinger-stationary}
 \hat{H} \psi(\mathbf{r}) = E \psi(\mathbf{r})
-\end{equation}For writing code we can do it like this
+\end{equation}For writing simple math stuff without numbering we can use
+
+$GT = \{gt\}$, $SEG=\{seg\}$ are two sets of segmented objects.
+
+\subsection{Writing Code%
+  \label{writing-code}%
+}
+
+
+For writing code we can do it like this
 \begin{DUclass}{code}
 \begin{DUclass}{python}
 \begin{quote}
 \ttfamily\raggedright
-\DUrole{keyword}{def}\DUrole{whitespace}{~}\DUrole{name}{\DUrole{function}{iou3D}}\DUrole{punctuation}{(}\DUrole{name}{box\_unet}\DUrole{punctuation}{,}~\DUrole{name}{centroid\_star}\DUrole{punctuation}{):}\DUrole{whitespace}{~\\
+\DUrole{keyword}{def}\DUrole{whitespace}{~}\DUrole{name}{\DUrole{function}{WatershedwithMask3D}}\DUrole{punctuation}{(}\DUrole{name}{Image}\DUrole{punctuation}{,}~\DUrole{name}{Label}\DUrole{punctuation}{,}~\DUrole{name}{mask}\DUrole{punctuation}{,}~\DUrole{name}{grid}\DUrole{punctuation}{):}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{properties}~\DUrole{operator}{=}~\DUrole{name}{measure}\DUrole{operator}{.}\DUrole{name}{regionprops}\DUrole{punctuation}{(}\DUrole{name}{Label}\DUrole{punctuation}{,}~\DUrole{name}{Image}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{binaryproperties}~\DUrole{operator}{=}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{measure}\DUrole{operator}{.}\DUrole{name}{regionprops}\DUrole{punctuation}{(}\DUrole{name}{label}\DUrole{punctuation}{(}\DUrole{name}{mask}\DUrole{punctuation}{),}~\DUrole{name}{Image}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{Coordinates}~\DUrole{operator}{=}~\DUrole{punctuation}{{[}}\DUrole{name}{prop}\DUrole{operator}{.}\DUrole{name}{centroid}~\DUrole{keyword}{for}~\DUrole{name}{prop}~\DUrole{operator}{\DUrole{word}{in}}~\DUrole{name}{properties}\DUrole{punctuation}{{]}}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{BinaryCoordinates}~\DUrole{operator}{=}~\DUrole{punctuation}{{[}}\DUrole{name}{prop}\DUrole{operator}{.}\DUrole{name}{centroid}~\DUrole{keyword}{for}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{prop}~\DUrole{operator}{\DUrole{word}{in}}~\DUrole{name}{binaryproperties}\DUrole{punctuation}{{]}}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{Binarybbox}~\DUrole{operator}{=}\DUrole{whitespace}{~\\
+}~~\DUrole{punctuation}{{[}}\DUrole{name}{prop}\DUrole{operator}{.}\DUrole{name}{bbox}~\DUrole{keyword}{for}~\DUrole{name}{prop}~\DUrole{operator}{\DUrole{word}{in}}~\DUrole{name}{binaryproperties}\DUrole{punctuation}{{]}}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{Coordinates}~\DUrole{operator}{=}~\DUrole{name}{\DUrole{builtin}{sorted}}\DUrole{punctuation}{(}\DUrole{name}{Coordinates}~\DUrole{punctuation}{,}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{key}\DUrole{operator}{=}\DUrole{keyword}{lambda}~\DUrole{name}{k}\DUrole{punctuation}{:}~\DUrole{punctuation}{{[}}\DUrole{name}{k}\DUrole{punctuation}{{[}}\DUrole{literal}{\DUrole{number}{\DUrole{integer}{0}}}\DUrole{punctuation}{{]},}~\DUrole{name}{k}\DUrole{punctuation}{{[}}\DUrole{literal}{\DUrole{number}{\DUrole{integer}{1}}}\DUrole{punctuation}{{]},}~\DUrole{name}{k}\DUrole{punctuation}{{[}}\DUrole{literal}{\DUrole{number}{\DUrole{integer}{2}}}\DUrole{punctuation}{{]}{]})}\DUrole{whitespace}{~\\
 ~\\
-}~~\DUrole{name}{ndim}~\DUrole{operator}{=}~\DUrole{name}{\DUrole{builtin}{len}}\DUrole{punctuation}{(}\DUrole{name}{centroid\_star}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
-}~~\DUrole{name}{inside}~\DUrole{operator}{=}~\DUrole{keyword}{\DUrole{constant}{False}}\DUrole{whitespace}{~\\
+}~~\DUrole{keyword}{if}~\DUrole{name}{\DUrole{builtin}{len}}\DUrole{punctuation}{(}\DUrole{name}{Binarybbox}\DUrole{punctuation}{)}~\DUrole{operator}{>}~\DUrole{literal}{\DUrole{number}{\DUrole{integer}{0}}}\DUrole{punctuation}{:}\DUrole{whitespace}{~\\
+}~~~~~~~\DUrole{keyword}{for}~\DUrole{name}{i}~\DUrole{operator}{\DUrole{word}{in}}~\DUrole{name}{\DUrole{builtin}{range}}\DUrole{punctuation}{(}\DUrole{literal}{\DUrole{number}{\DUrole{integer}{0}}}\DUrole{punctuation}{,}~\DUrole{name}{\DUrole{builtin}{len}}\DUrole{punctuation}{(}\DUrole{name}{Binarybbox}\DUrole{punctuation}{)):}\DUrole{whitespace}{~\\
 ~\\
-}~~\DUrole{name}{Condition}~\DUrole{operator}{=}~\DUrole{punctuation}{{[}}\DUrole{name}{Conditioncheck}\DUrole{punctuation}{(}\DUrole{name}{centroid\_star}\DUrole{punctuation}{,}~\DUrole{name}{box\_unet}\DUrole{punctuation}{,}\DUrole{whitespace}{~\\
-}~~~\DUrole{name}{p}\DUrole{punctuation}{,}~\DUrole{name}{ndim}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
-}~~~\DUrole{keyword}{for}~\DUrole{name}{p}~\DUrole{operator}{\DUrole{word}{in}}~\DUrole{name}{\DUrole{builtin}{range}}\DUrole{punctuation}{(}\DUrole{literal}{\DUrole{number}{\DUrole{integer}{0}}}\DUrole{punctuation}{,}\DUrole{name}{ndim}\DUrole{punctuation}{){]}}\DUrole{whitespace}{~\\
+}~~~~~~~~~~\DUrole{name}{box}~\DUrole{operator}{=}~\DUrole{name}{Binarybbox}\DUrole{punctuation}{{[}}\DUrole{name}{i}\DUrole{punctuation}{{]}}\DUrole{whitespace}{~\\
+}~~~~~~~~~~\DUrole{name}{inside}~\DUrole{operator}{=}~\DUrole{punctuation}{{[}}\DUrole{name}{iou3D}\DUrole{punctuation}{(}\DUrole{name}{box}\DUrole{punctuation}{,}~\DUrole{name}{star}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
+}~~~~~~~~~~\DUrole{keyword}{for}~\DUrole{name}{star}~\DUrole{operator}{\DUrole{word}{in}}~\DUrole{name}{Coordinates}\DUrole{punctuation}{{]}}\DUrole{whitespace}{~\\
 ~\\
-}~~\DUrole{name}{inside}~\DUrole{operator}{=}~\DUrole{name}{\DUrole{builtin}{all}}\DUrole{punctuation}{(}\DUrole{name}{Condition}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
+}~~~~~~~~~~\DUrole{keyword}{if}~\DUrole{operator}{\DUrole{word}{not}}~\DUrole{name}{\DUrole{builtin}{any}}\DUrole{punctuation}{(}\DUrole{name}{inside}\DUrole{punctuation}{)}~\DUrole{punctuation}{:}\DUrole{whitespace}{~\\
+}~~~~~~~~~~~~~~~~\DUrole{name}{Coordinates}\DUrole{operator}{.}\DUrole{name}{append}\DUrole{punctuation}{(}\DUrole{name}{BinaryCoordinates}\DUrole{punctuation}{{[}}\DUrole{name}{i}\DUrole{punctuation}{{]})}\DUrole{whitespace}{~\\
 ~\\
-}~~\DUrole{keyword}{return}~\DUrole{name}{inside}\DUrole{whitespace}{~\\
 ~\\
-}\DUrole{keyword}{def}\DUrole{whitespace}{~}\DUrole{name}{\DUrole{function}{Conditioncheck}}\DUrole{punctuation}{(}\DUrole{name}{centroid\_centroid}\DUrole{punctuation}{,}~\DUrole{name}{box\_unet}\DUrole{punctuation}{,}\DUrole{whitespace}{~\\
-}~~~~~~~\DUrole{name}{p}\DUrole{punctuation}{,}~\DUrole{name}{ndim}\DUrole{punctuation}{):}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{Coordinates}\DUrole{operator}{.}\DUrole{name}{append}\DUrole{punctuation}{((}\DUrole{literal}{\DUrole{number}{\DUrole{integer}{0}}}\DUrole{punctuation}{,}\DUrole{literal}{\DUrole{number}{\DUrole{integer}{0}}}\DUrole{punctuation}{,}\DUrole{literal}{\DUrole{number}{\DUrole{integer}{0}}}\DUrole{punctuation}{))}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{Coordinates}~\DUrole{operator}{=}~\DUrole{name}{np}\DUrole{operator}{.}\DUrole{name}{asarray}\DUrole{punctuation}{(}\DUrole{name}{Coordinates}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{coordinates\_int}~\DUrole{operator}{=}~\DUrole{name}{np}\DUrole{operator}{.}\DUrole{name}{round}\DUrole{punctuation}{(}\DUrole{name}{Coordinates}\DUrole{punctuation}{)}\DUrole{operator}{.}\DUrole{name}{astype}\DUrole{punctuation}{(}\DUrole{name}{\DUrole{builtin}{int}}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
 ~\\
-}~~\DUrole{name}{condition}~\DUrole{operator}{=}~\DUrole{keyword}{\DUrole{constant}{False}}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{markers\_raw}~\DUrole{operator}{=}~\DUrole{name}{np}\DUrole{operator}{.}\DUrole{name}{zeros\_like}\DUrole{punctuation}{(}\DUrole{name}{Image}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{markers\_raw}\DUrole{punctuation}{{[}}\DUrole{name}{\DUrole{builtin}{tuple}}\DUrole{punctuation}{(}\DUrole{name}{coordinates\_int}\DUrole{operator}{.}\DUrole{name}{T}\DUrole{punctuation}{){]}}~\DUrole{operator}{=}~\DUrole{literal}{\DUrole{number}{\DUrole{integer}{1}}}\DUrole{whitespace}{~\\
+}~~\DUrole{operator}{+}~\DUrole{name}{np}\DUrole{operator}{.}\DUrole{name}{arange}\DUrole{punctuation}{(}\DUrole{name}{\DUrole{builtin}{len}}\DUrole{punctuation}{(}\DUrole{name}{Coordinates}\DUrole{punctuation}{))}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{markers}~\DUrole{operator}{=}~\DUrole{name}{morphology}\DUrole{operator}{.}\DUrole{name}{dilation}\DUrole{punctuation}{(}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{markers\_raw}\DUrole{operator}{.}\DUrole{name}{astype}\DUrole{punctuation}{(}\DUrole{literal}{\DUrole{string}{\DUrole{single}{'uint16'}}}\DUrole{punctuation}{),}~\DUrole{name}{morphology}\DUrole{operator}{.}\DUrole{name}{ball}\DUrole{punctuation}{(}\DUrole{literal}{\DUrole{number}{\DUrole{integer}{2}}}\DUrole{punctuation}{))}\DUrole{whitespace}{~\\
 ~\\
-}~~\DUrole{keyword}{if}~\DUrole{name}{centroid\_star}\DUrole{punctuation}{{[}}\DUrole{name}{p}\DUrole{punctuation}{{]}}~\DUrole{operator}{>=}~\DUrole{name}{box\_unet}\DUrole{punctuation}{{[}}\DUrole{name}{p}\DUrole{punctuation}{{]}}\DUrole{whitespace}{~\\
-}~~\DUrole{operator}{\DUrole{word}{and}}~\DUrole{name}{centroid\_star}\DUrole{punctuation}{{[}}\DUrole{name}{p}\DUrole{punctuation}{{]}}~\DUrole{operator}{<=}~\DUrole{name}{box\_unet}\DUrole{punctuation}{{[}}\DUrole{name}{p}~\DUrole{operator}{+}~\DUrole{name}{ndim}\DUrole{punctuation}{{]}:}\DUrole{whitespace}{~\\
-~\\
-}~~~~~~~\DUrole{name}{condition}~\DUrole{operator}{=}~\DUrole{keyword}{\DUrole{constant}{True}}\DUrole{whitespace}{~\\
-~\\
-}~~\DUrole{keyword}{return}~\DUrole{name}{condition}
+}~~\DUrole{name}{watershedImage}~\DUrole{operator}{=}~\DUrole{name}{watershed}\DUrole{punctuation}{(}\DUrole{operator}{-}\DUrole{name}{Image}\DUrole{punctuation}{,}~\DUrole{name}{markers}\DUrole{punctuation}{,}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{mask}~\DUrole{operator}{=}~\DUrole{name}{mask}\DUrole{operator}{.}\DUrole{name}{copy}\DUrole{punctuation}{())}\DUrole{whitespace}{~\\
+}~~\DUrole{keyword}{return}~\DUrole{name}{watershedImage}\DUrole{punctuation}{,}~\DUrole{name}{markers}
 \end{quote}
 \end{DUclass}
 \end{DUclass}
+
+
+\subsection{Putting a figure%
+  \label{putting-a-figure}%
+}
 For adding a figure it is like\begin{figure}[]\noindent\makebox[\columnwidth][c]{\includegraphics[width=\columnwidth]{Figures/radiation.jpg}}
 \caption{Schematic representation showing the radiation spectrum with decreasing wavelength (in meters) from left to right, radio waves have wavelength of kilometers (that is what it needs to be in our houses from a transmitter tower), microwaves of about 5 cm (easy guess as the size of the box itself is about 15 cm or so) while the visible radiation is 400-800 nano meter.}
 \begin{DUlegend}
 
 \DUrole{label}{radiation}\end{DUlegend}
 \end{figure}
+
+Then we can refer to the figure by saying is shown in the Figure \DUrole{ref}{radiation}
+
+\subsection{Citing People%
+  \label{citing-people}%
+}
+
+
+\DUrole{cite}{schmidt2018} \DUrole{cite}{weigert2020} \DUrole{cite}{Beucher2018} \DUrole{cite}{Ronn2015} \DUrole{cite}{Wolny2020} \DUrole{cite}{eschweiler2018}
+\bibliographystyle{alphaurl}
+\bibliography{vkc}
+
 \end{document}
