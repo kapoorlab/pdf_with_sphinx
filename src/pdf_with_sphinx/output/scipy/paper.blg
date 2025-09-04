@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper.aux
+The style file: alphaurl.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: vkc.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--to sort, need author or key in Github2021
+Warning--to sort, need author or key in Celegans
+Warning--empty booktitle in Beucher2018
+You've used 19 entries,
+            3368 wiz_defined-function locations,
+            829 strings with 10553 characters,
+and the built_in function-call counts, 11882 in all, are:
+= -- 1186
+> -- 673
+< -- 7
++ -- 241
+- -- 238
+* -- 874
+:= -- 1785
+add.period$ -- 70
+call.type$ -- 19
+change.case$ -- 173
+chr.to.int$ -- 19
+cite$ -- 24
+duplicate$ -- 294
+empty$ -- 877
+format.name$ -- 252
+if$ -- 2799
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 15
+newline$ -- 111
+num.names$ -- 53
+pop$ -- 280
+preamble$ -- 1
+purify$ -- 192
+quote$ -- 0
+skip$ -- 679
+stack$ -- 0
+substring$ -- 379
+swap$ -- 89
+text.length$ -- 37
+text.prefix$ -- 4
+top$ -- 0
+type$ -- 152
+warning$ -- 3
+while$ -- 66
+width$ -- 22
+write$ -- 267
+(There were 3 warnings)

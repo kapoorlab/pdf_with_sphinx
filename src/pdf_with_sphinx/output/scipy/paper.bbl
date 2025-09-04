@@ -1,0 +1,166 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{vdWSN{\etalchar{+}}14}
+
+\bibitem[BKK{\etalchar{+}}19]{berg2019}
+Stuart Berg, Dominik Kutra, Thorben Kroeger, Christoph~N. Straehle, Bernhard~X.
+  Kausler, Carsten Haubold, Martin Schiegg, Janez Ales, Thorsten Beier, Markus
+  Rudy, Kemal Eren, Jaime~I. Cervantes, Buote Xu, Fynn Beuttenmueller, Adrian
+  Wolny, Chong Zhang, Ullrich Koethe, Fred~A. Hamprecht, and Anna Kreshuk.
+\newblock ilastik: interactive machine learning for (bio)image analysis.
+\newblock {\em Nature Methods}, September 2019.
+\newblock \href {https://doi.org/10.1038/s41592-019-0582-9}
+  {\path{doi:10.1038/s41592-019-0582-9}}.
+
+\bibitem[BM18]{Beucher2018}
+S.~Beucher and F.~Meyer.
+\newblock The morphological approach to segmentation: The watershed
+  transformation.
+\newblock 2018.
+\newblock \href {https://doi.org/10.1201/9781482277234-12}
+  {\path{doi:10.1201/9781482277234-12}}.
+
+\bibitem[Cel]{Celegans}
+Waterston lab, university of washington, seattle, wa, usa.
+\newblock http://celltrackingchallenge.net/3d-datasets/.
+
+\bibitem[ESC{\etalchar{+}}18]{eschweiler2018}
+Dennis Eschweiler, Thiago~V. Spina, Rohan~C. Choudhury, Elliot Meyerowitz,
+  Alexandre Cunha, and Johannes Stegmaier.
+\newblock Cnn-based preprocessing to optimize watershed-based cell segmentation
+  in 3d confocal microscopy images, 2018.
+\newblock \href {https://arxiv.org/abs/1810.06933} {\path{arXiv:1810.06933}},
+  \href {https://doi.org/10.1109/isbi.2019.8759242}
+  {\path{doi:10.1109/isbi.2019.8759242}}.
+
+\bibitem[Git]{Github2021}
+https://github.com/kapoorlab/vollseg,
+  https://github.com/kapoorlab/napatrackmater,
+  https://github.com/kapoorlab/btrackmate.
+
+\bibitem[KBJ19]{krull2019}
+Alexander Krull, Tim-Oliver Buchholz, and Florian Jug.
+\newblock Noise2void-learning denoising from single noisy images.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 2129--2137, 2019.
+\newblock \href {https://doi.org/10.1109/cvpr.2019.00223}
+  {\path{doi:10.1109/cvpr.2019.00223}}.
+
+\bibitem[Kuh55]{Kuhn1955}
+H.~W. Kuhn.
+\newblock The hungarian method for the assignment problem.
+\newblock {\em Naval Research Logistics Quarterly}, 2(1‐2):83--97, 1955.
+\newblock \href
+  {https://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/nav.3800020109}
+  {\path{arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1002/nav.3800020109}},
+  \href {https://doi.org/10.1002/nav.3800020109}
+  {\path{doi:10.1002/nav.3800020109}}.
+
+\bibitem[Luc74]{Lucy74}
+L.B. Lucy.
+\newblock An iterative technique for the rectification of observed
+  distributions.
+\newblock {\em The Astronomical Journal 7}, 79:745, 1974.
+\newblock \href {https://doi.org/10.1086/111605} {\path{doi:10.1086/111605}}.
+
+\bibitem[MBB{\etalchar{+}}08]{Murray2008}
+John~Isaac Murray, Zhirong Bao, Thomas~J Boyle, Max~E Boeck, Barbara~L Mericle,
+  Thomas~J Nicholas, Zhongying Zhao, Matthew~J Sandel, and Robert~H Waterston.
+\newblock Automated analysis of embryonic gene expression with cellular
+  resolution in c. elegans.
+\newblock {\em Nature Methods}, 5(8):703--709, 2008.
+\newblock \href {https://doi.org/10.1038/nmeth.1228}
+  {\path{doi:10.1038/nmeth.1228}}.
+
+\bibitem[RFB15]{Ronn2015}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
+\newblock U-net: Convolutional networks for biomedical image segmentation.
+\newblock In Nassir Navab, Joachim Hornegger, William~M. Wells, and
+  Alejandro~F. Frangi, editors, {\em Medical Image Computing and
+  Computer-Assisted Intervention -- MICCAI 2015}, pages 234--241, Cham, 2015.
+  Springer International Publishing.
+
+\bibitem[RHH20]{Rasse2020}
+Tobias~M. Rasse, R{\'e}ka Hollandi, and Peter Horvath.
+\newblock Opsef: Open source python framework for collaborative instance
+  segmentation of bioimages.
+\newblock {\em Frontiers in Bioengineering and Biotechnology}, 8:1171, 2020.
+\newblock \href {https://doi.org/10.3389/fbioe.2020.558880}
+  {\path{doi:10.3389/fbioe.2020.558880}}.
+
+\bibitem[Ric72]{Richardson72}
+William~Hadley Richardson.
+\newblock Bayesian-based iterative method of image restoration$\ast$.
+\newblock {\em J. Opt. Soc. Am.}, 62(1):55--59, Jan 1972.
+\newblock \href {https://doi.org/10.1364/JOSA.62.000055}
+  {\path{doi:10.1364/JOSA.62.000055}}.
+
+\bibitem[SWBM18]{schmidt2018}
+Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers.
+\newblock Cell detection with star-convex polygons.
+\newblock In {\em Medical Image Computing and Computer Assisted Intervention -
+  {MICCAI} 2018 - 21st International Conference, Granada, Spain, September
+  16-20, 2018, Proceedings, Part {II}}, pages 265--273, 2018.
+\newblock \href {https://doi.org/10.1007/978-3-030-00934-2_30}
+  {\path{doi:10.1007/978-3-030-00934-2_30}}.
+
+\bibitem[Tin]{Fijiwiki}
+Jean-Yves Tinevez.
+\newblock Trackmate manual.
+\newblock https://imagej.net/TrackMate.
+
+\bibitem[TPS{\etalchar{+}}17]{Tinevez2017}
+Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve~M. Hoopes,
+  Gregory~D. Reynolds, Emmanuel Laplantine, Sebastian~Y. Bednarek, Spencer~L.
+  Shorte, and Kevin~W. Eliceiri.
+\newblock Trackmate: An open and extensible platform for single-particle
+  tracking.
+\newblock {\em Methods}, 115:80--90, 2017.
+\newblock Image Processing for Biologists.
+\newblock \href {https://doi.org/10.1016/j.ymeth.2016.09.016}
+  {\path{doi:10.1016/j.ymeth.2016.09.016}}.
+
+\bibitem[UVCL20]{Ulicna2020}
+Kristina Ulicna, Giulia Vallardi, Guillaume Charras, and Alan~R. Lowe.
+\newblock Automated deep lineage tree analysis using a bayesian single cell
+  tracking approach.
+\newblock {\em bioRxiv}, 2020.
+\newblock \href
+  {https://arxiv.org/abs/https://www.biorxiv.org/content/early/2020/09/10/2020.09.10.276980.full.pdf}
+  {\path{arXiv:https://www.biorxiv.org/content/early/2020/09/10/2020.09.10.276980.full.pdf}},
+  \href {https://doi.org/10.1101/2020.09.10.276980}
+  {\path{doi:10.1101/2020.09.10.276980}}.
+
+\bibitem[vdWSN{\etalchar{+}}14]{scikit-image}
+{S}t\'efan van~der Walt, {J}ohannes~{L}. {S}ch\"onberger, {J}uan
+  {Nunez-Iglesias}, {F}ran\c{c}ois {B}oulogne, {J}oshua~{D}. {W}arner, {N}eil
+  {Y}ager, {E}mmanuelle {G}ouillart, {T}ony {Y}u, and the scikit-image
+  contributors.
+\newblock scikit-image: image processing in {P}ython.
+\newblock {\em PeerJ}, 2:e453, 6 2014.
+\newblock \href {https://doi.org/10.7717/peerj.453}
+  {\path{doi:10.7717/peerj.453}}.
+
+\bibitem[WCV{\etalchar{+}}20]{Wolny2020}
+Adrian Wolny, Lorenzo Cerrone, Athul Vijayan, Rachele Tofanelli, Amaya
+  Vilches~Barro, Marion Louveaux, Christian Wenzl, Susanne Steigleder,
+  Constantin Pape, Alberto Bailoni, Salva Duran-Nebreda, George Bassel, Jan~U.
+  Lohmann, Fred~A. Hamprecht, Kay Schneitz, Alexis Maizel, and Anna Kreshuk.
+\newblock Accurate and versatile 3d segmentation of plant tissues at cellular
+  resolution.
+\newblock {\em bioRxiv}, 2020.
+\newblock \href
+  {https://arxiv.org/abs/https://www.biorxiv.org/content/early/2020/01/18/2020.01.17.910562.full.pdf}
+  {\path{arXiv:https://www.biorxiv.org/content/early/2020/01/18/2020.01.17.910562.full.pdf}},
+  \href {https://doi.org/10.1101/2020.01.17.910562}
+  {\path{doi:10.1101/2020.01.17.910562}}.
+
+\bibitem[WSH{\etalchar{+}}20]{weigert2020}
+Martin Weigert, Uwe Schmidt, Robert Haase, Ko~Sugawara, and Gene Myers.
+\newblock Star-convex polyhedra for 3d object detection and segmentation in
+  microscopy.
+\newblock In {\em The IEEE Winter Conference on Applications of Computer Vision
+  (WACV)}, March 2020.
+\newblock \href {https://doi.org/10.1109/WACV45572.2020.9093435}
+  {\path{doi:10.1109/WACV45572.2020.9093435}}.
+
+\end{thebibliography}
