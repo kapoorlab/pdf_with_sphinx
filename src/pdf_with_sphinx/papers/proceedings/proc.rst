@@ -38,7 +38,7 @@ For writing simple math stuff without numbering we can use
 Writing Code
 -------------
 
-For writing code we can do it like this:
+
 
 
 .. code-block:: python
@@ -81,6 +81,7 @@ For adding a figure it is like
 
 
 Then we can refer to the figure by saying is shown in the Figure :ref:`radiation`
+
 
 
 Citing People
