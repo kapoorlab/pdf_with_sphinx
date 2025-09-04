@@ -1,0 +1,192 @@
+{
+  "proceedings": {
+    "doi": "",
+    "xref": {
+      "prefix": "",
+      "registrant": "Crossref",
+      "resource_url": "https://kapoorlabs.org",
+      "depositor_name": "Varun Kapoor",
+      "depositor_email": "varun.kapoor@kapoorlabs.org"
+    },
+    "copyright": {
+      "proceedings": [
+        "The articles of KapoorLabs are copyrighted and owned by their original authors",
+        "This is an open-access publication and is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+        "For more information, please see:  http://creativecommons.org/licenses/by/3.0/"
+      ],
+      "article": "This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+      "license": "Creative Commons Attribution License (CCAL)"
+    },
+    "title": {
+      "conference": "KapoorLabs Proceedings",
+      "full": "Proceedings of KapoorLabs",
+      "short": "PROC. OF KAPOORLABS",
+      "acronym": "KapoorLabs",
+      "ordinal": "1st"
+    },
+    "citation_key": "proc-kapoorlabs",
+    "editor_email": [
+      "varun.kapoor@kapoorlabs.org"
+    ],
+    "dates": "Sep 1 - Dec 31",
+    "editor": [
+      "Varun Kapoor"
+
+    ],
+    "location": "Paris, France",
+    "volume": 1,
+    "number": 1,
+    "isbn": "noisbn",
+    "year": "2025"
+  },
+  "organization": [
+    {
+      "name": "Conference Chairs",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+
+      ]
+    },
+    {
+      "name": "Program Chairs",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+
+      ]
+    },
+    {
+      "name": "Communications",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Birds of a Feather",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Proceedings",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Financial Aid",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Tutorials",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Sprints",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Diversity",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Activities",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Sponsors",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Financial",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Logistics",
+      "members": [
+        {
+          "org": "KapoorLabs",
+          "name": "Varun Kapoor"
+        }
+      ]
+    },
+    {
+      "name": "Proceedings Reviewers",
+      "members": [
+        {
+          "name": "Varun Kapoor"
+        }
+
+
+      ]
+    }
+  ],
+  "series": {
+    "title": {
+      "full": "Proceedings of KapoorLabs"
+    },
+    "doi": "",
+    "xref": {
+      "issn": "",
+      "resource_url": "https://kapoorlabs.org"
+    }
+  },
+  "scipy_scholarship": [
+    {
+      "org": "",
+      "name": "Sofie Kapoor"
+    }
+
+
+  ],
+  "diversity_scholarship": []
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Title of the document",
+  "authors": "Varun Kapoor",
+  "author": [
+    "Varun Kapoor"
+  ],
+  "author_email": [
+    "varun.kapoor@kaporlabs.org"
+  ],
+  "author_institution": [
+    "KapoorLabs, Paris, France."
+  ],
+  "author_institution_map": {
+    "Varun Kapoor": [
+      "KapoorLabs, Paris, France."
+    ]
+  },
+  "author_orcid_map": {},
+  "abstract": [],
+  "keywords": "",
+  "copyright_holder": "Varun Kapoor.",
+  "video": "",
+  "bibliography": ""
+}

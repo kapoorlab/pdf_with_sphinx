@@ -3,7 +3,6 @@
 [![License MIT](https://img.shields.io/pypi/l/pdf_with_sphinx.svg?color=green)](https://github.com/kapoorlab/pdf_with_sphinx/raw/main/LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/pdf_with_sphinx.svg?color=green)](https://pypi.org/project/pdf_with_sphinx)
 [![Python Version](https://img.shields.io/pypi/pyversions/pdf_with_sphinx.svg?color=green)](https://python.org)
-[![tests](https://github.com/kapoorlab/pdf_with_sphinx/workflows/tests/badge.svg)](https://github.com/kapoorlab/pdf_with_sphinx/actions)
 [![codecov](https://codecov.io/gh/kapoorlab/pdf_with_sphinx/branch/main/graph/badge.svg)](https://codecov.io/gh/kapoorlab/pdf_with_sphinx)
 
 
@@ -28,10 +27,13 @@ To install latest development version :
     pip install git+https://github.com/kapoorlab/pdf_with_sphinx.git
 
 
-## Contributing
+## Creating your pdf
 
-Contributions are very welcome. Tests can be run with [tox], please ensure
-the coverage at least stays the same before you submit a pull request.
+You can write your rst file inside /src/pdf_with_sphinx/papers/proceedings/ and then create a pdf from it using the command
+
+$ source make_paper.sh papers/proceedings/
+
+It will create the pdf file in the output, all your Figures should be placed inside the Figures folder which is inside the proceedings folder.
 
 ## License
 
