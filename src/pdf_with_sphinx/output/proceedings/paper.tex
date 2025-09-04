@@ -193,7 +193,9 @@ For writing code we can do it like this
 \begin{DUclass}{python}
 \begin{quote}
 \ttfamily\raggedright
-\DUrole{keyword}{def}\DUrole{whitespace}{~}\DUrole{name}{\DUrole{function}{WatershedwithMask3D}}\DUrole{punctuation}{(}\DUrole{name}{Image}\DUrole{punctuation}{,}~\DUrole{name}{Label}\DUrole{punctuation}{,}~\DUrole{name}{mask}\DUrole{punctuation}{,}~\DUrole{name}{grid}\DUrole{punctuation}{):}\DUrole{whitespace}{~\\
+\DUrole{punctuation}{:}\DUrole{name}{linenos}\DUrole{punctuation}{:}\DUrole{whitespace}{~\\
+}\DUrole{punctuation}{:}\DUrole{name}{caption}\DUrole{punctuation}{:}~\DUrole{name}{Watershed}~\DUrole{keyword}{with}~\DUrole{name}{Mask}~\DUrole{operator}{\DUrole{word}{in}}~\DUrole{literal}{\DUrole{number}{\DUrole{integer}{3}}}\DUrole{name}{D}\DUrole{whitespace}{~\\
+}\DUrole{keyword}{def}\DUrole{whitespace}{~}\DUrole{name}{\DUrole{function}{WatershedwithMask3D}}\DUrole{punctuation}{(}\DUrole{name}{Image}\DUrole{punctuation}{,}~\DUrole{name}{Label}\DUrole{punctuation}{,}~\DUrole{name}{mask}\DUrole{punctuation}{,}~\DUrole{name}{grid}\DUrole{punctuation}{):}\DUrole{whitespace}{~\\
 }~~\DUrole{name}{properties}~\DUrole{operator}{=}~\DUrole{name}{measure}\DUrole{operator}{.}\DUrole{name}{regionprops}\DUrole{punctuation}{(}\DUrole{name}{Label}\DUrole{punctuation}{,}~\DUrole{name}{Image}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
 }~~\DUrole{name}{binaryproperties}~\DUrole{operator}{=}\DUrole{whitespace}{~\\
 }~~\DUrole{name}{measure}\DUrole{operator}{.}\DUrole{name}{regionprops}\DUrole{punctuation}{(}\DUrole{name}{label}\DUrole{punctuation}{(}\DUrole{name}{mask}\DUrole{punctuation}{),}~\DUrole{name}{Image}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\

@@ -42,7 +42,9 @@ For writing code we can do it like this
 
 
 .. code-block:: python    
-    
+
+  :linenos:
+  :caption: Watershed with Mask in 3D  
   def WatershedwithMask3D(Image, Label, mask, grid):
     properties = measure.regionprops(Label, Image) 
     binaryproperties = 
