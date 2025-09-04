@@ -11,59 +11,49 @@
 \citation{weigert2020}
 \citation{eschweiler2018}
 \citation{Wolny2020}
+\citation{Tinevez2017}
 \newlabel{introduction}{{}{1}{Introduction}{section*.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\relax Introduction}{1}{section*.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Schematic representation showing the segmentation approach used in VollSeg. First, we input the raw fluorescent image in 3D (A) and pre-process it to remove noise. Next, we obtain the star convex approximation to the cells using Stardist (B) and the U-Net prediction labelled via connected components (C). We then obtain seeds from the centroids of labelled image in B, for each labelled region of C in order to create bounding boxes and centroids. If there is no seed from B in the bounding box region from U-Net, we add the new centroid (shown in yellow) to the seed pool (D). Finally, we do a marker controlled watershed in 3D using skimage implementation on the probability map shown in (E) to obtain the final cell segmentation result (F). All images are displayed in Napari viewer with 3D display view.}}{2}{figure.caption.2}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{algorithm}{{1}{2}{Schematic representation showing the segmentation approach used in VollSeg. First, we input the raw fluorescent image in 3D (A) and pre-process it to remove noise. Next, we obtain the star convex approximation to the cells using Stardist (B) and the U-Net prediction labelled via connected components (C). We then obtain seeds from the centroids of labelled image in B, for each labelled region of C in order to create bounding boxes and centroids. If there is no seed from B in the bounding box region from U-Net, we add the new centroid (shown in yellow) to the seed pool (D). Finally, we do a marker controlled watershed in 3D using skimage implementation on the probability map shown in (E) to obtain the final cell segmentation result (F). All images are displayed in Napari viewer with 3D display view}{figure.caption.2}{}}
-\citation{Tinevez2017}
 \citation{Ulicna2020}
 \citation{krull2019}
 \citation{Richardson72}
 \citation{Lucy74}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Schematic representation showing the segmentation approach used in VollSeg. First, we input the raw fluorescent image in 3D (A) and pre-process it to remove noise. Next, we obtain the star convex approximation to the cells using Stardist (B) and the U-Net prediction labelled via connected components (C). We then obtain seeds from the centroids of labelled image in B, for each labelled region of C in order to create bounding boxes and centroids. If there is no seed from B in the bounding box region from U-Net, we add the new centroid (shown in yellow) to the seed pool (D). Finally, we do a marker controlled watershed in 3D using skimage implementation on the probability map shown in (E) to obtain the final cell segmentation result (F). All images are displayed in Napari viewer with 3D display view.}}{2}{figure.caption.2}\protected@file@percent }
+\newlabel{material-and-methods}{{}{2}{Material and Methods}{section*.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\relax Material and Methods}{2}{section*.3}\protected@file@percent }
+\newlabel{preparation-of-the-dataset}{{}{2}{Preparation of the dataset}{section*.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\relax Preparation of the dataset}{2}{section*.4}\protected@file@percent }
+\newlabel{parameter-setting}{{}{2}{Parameter Setting}{section*.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\relax Parameter Setting}{2}{section*.5}\protected@file@percent }
 \citation{scikit-image}
-\newlabel{material-and-methods}{{}{3}{Material and Methods}{section*.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\relax Material and Methods}{3}{section*.3}\protected@file@percent }
-\newlabel{preparation-of-the-dataset}{{}{3}{Preparation of the dataset}{section*.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\relax Preparation of the dataset}{3}{section*.4}\protected@file@percent }
-\newlabel{parameter-setting}{{}{3}{Parameter Setting}{section*.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\relax Parameter Setting}{3}{section*.5}\protected@file@percent }
+\citation{Kuhn1955}
 \newlabel{segmentation}{{}{3}{Segmentation}{section*.6}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\relax Segmentation}{3}{section*.6}\protected@file@percent }
-\newlabel{performance-metrics}{{}{4}{Performance Metrics}{section*.7}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\relax Performance Metrics}{4}{section*.7}\protected@file@percent }
-\citation{Kuhn1955}
-\newlabel{detailed-procedure}{{}{5}{Detailed Procedure}{section*.8}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\relax Detailed Procedure}{5}{section*.8}\protected@file@percent }
-\newlabel{network-training}{{}{5}{Network Training}{section*.9}{}}
-\@writefile{toc}{\contentsline {paragraph}{\relax Network Training}{5}{section*.9}\protected@file@percent }
+\newlabel{performance-metrics}{{}{3}{Performance Metrics}{section*.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\relax Performance Metrics}{3}{section*.7}\protected@file@percent }
+\newlabel{detailed-procedure}{{}{4}{Detailed Procedure}{section*.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\relax Detailed Procedure}{4}{section*.8}\protected@file@percent }
+\newlabel{network-training}{{}{4}{Network Training}{section*.9}{}}
+\@writefile{toc}{\contentsline {paragraph}{\relax Network Training}{4}{section*.9}\protected@file@percent }
 \citation{Tinevez2017}
 \citation{Celegans}
 \citation{Murray2008}
-\newlabel{tracking}{{}{6}{Tracking}{section*.10}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\relax Tracking}{6}{section*.10}\protected@file@percent }
 \citation{Fijiwiki}
 \citation{schmidt2018}
 \citation{weigert2020}
 \citation{Ronn2015}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Trackscheme display for the C. elegans dataset.}}{7}{figure.caption.11}\protected@file@percent }
-\newlabel{trackscheme}{{2}{7}{Trackscheme display for the C. elegans dataset}{figure.caption.11}{}}
-\newlabel{results}{{}{7}{Results}{section*.12}{}}
-\@writefile{toc}{\contentsline {subsection}{\relax Results}{7}{section*.12}\protected@file@percent }
-\newlabel{quantitative-comparisons-between-segmentation-methods}{{}{7}{Quantitative Comparisons between Segmentation Methods}{section*.13}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\relax Quantitative Comparisons between Segmentation Methods}{7}{section*.13}\protected@file@percent }
-\newlabel{track-analysis}{{}{7}{Track Analysis}{section*.17}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\relax Track Analysis}{7}{section*.17}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Visual 3D segmentation comparison between the Ground truth (GT) image, Stardist, U-Net and VollSeg results. The images are displayed in Napari viewer with 3D display view.}}{8}{figure.caption.14}\protected@file@percent }
-\newlabel{visseg}{{3}{8}{Visual 3D segmentation comparison between the Ground truth (GT) image, Stardist, U-Net and VollSeg results. The images are displayed in Napari viewer with 3D display view}{figure.caption.14}{}}
-\newlabel{conclusions}{{}{8}{Conclusions}{section*.20}{}}
-\@writefile{toc}{\contentsline {subsection}{\relax Conclusions}{8}{section*.20}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Segmentation comparision metrics between VollSeg (in blue), Stardist (in orange) and U-Net (in green). We plot (A) accuracy (as percentage), (B) F1 score (as percentage) and (C) true positive rates (as number of pixels) for all the networks.}}{9}{figure.caption.15}\protected@file@percent }
-\newlabel{metrics}{{4}{9}{Segmentation comparision metrics between VollSeg (in blue), Stardist (in orange) and U-Net (in green). We plot (A) accuracy (as percentage), (B) F1 score (as percentage) and (C) true positive rates (as number of pixels) for all the networks}{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces We plot Mean Squared error (MSE) (A) and Structural similarity index measurement (SSIM) (B) comparing between VollSeg (in blue), Stardist (in orange) and U-Net (in green).}}{10}{figure.caption.16}\protected@file@percent }
-\newlabel{ssimmse}{{5}{10}{We plot Mean Squared error (MSE) (A) and Structural similarity index measurement (SSIM) (B) comparing between VollSeg (in blue), Stardist (in orange) and U-Net (in green)}{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Napari widget to view tracks and plot track information in non-dividing trajectories (A) and dividing trajecrtories (B). For the selected track we see the intensity change over time and its associated fast Fourier transform.}}{11}{figure.caption.18}\protected@file@percent }
-\newlabel{intensity-napari}{{6}{11}{Napari widget to view tracks and plot track information in non-dividing trajectories (A) and dividing trajecrtories (B). For the selected track we see the intensity change over time and its associated fast Fourier transform}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Trackscheme display for the C. elegans dataset.}}{5}{figure.caption.11}\protected@file@percent }
+\newlabel{tracking}{{}{5}{Tracking}{section*.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\relax Tracking}{5}{section*.10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Visual 3D segmentation comparison between the Ground truth (GT) image, Stardist, U-Net and VollSeg results. The images are displayed in Napari viewer with 3D display view.}}{5}{figure.caption.14}\protected@file@percent }
+\newlabel{results}{{}{5}{Results}{section*.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\relax Results}{5}{section*.12}\protected@file@percent }
+\newlabel{quantitative-comparisons-between-segmentation-methods}{{}{5}{Quantitative Comparisons between Segmentation Methods}{section*.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\relax Quantitative Comparisons between Segmentation Methods}{5}{section*.13}\protected@file@percent }
+\newlabel{track-analysis}{{}{5}{Track Analysis}{section*.17}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\relax Track Analysis}{5}{section*.17}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Segmentation comparision metrics between VollSeg (in blue), Stardist (in orange) and U-Net (in green). We plot (A) accuracy (as percentage), (B) F1 score (as percentage) and (C) true positive rates (as number of pixels) for all the networks.}}{6}{figure.caption.15}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces We plot Mean Squared error (MSE) (A) and Structural similarity index measurement (SSIM) (B) comparing between VollSeg (in blue), Stardist (in orange) and U-Net (in green).}}{6}{figure.caption.16}\protected@file@percent }
 \bibstyle{alphaurl}
 \bibdata{vkc}
 \bibcite{berg2019}{BKK{$^{+}$}19}
@@ -73,14 +63,16 @@
 \bibcite{Github2021}{Git}
 \bibcite{krull2019}{KBJ19}
 \bibcite{Kuhn1955}{Kuh55}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Napari widget to view tracks and plot track information in non-dividing trajectories (A) and dividing trajecrtories (B). For the selected track we see the intensity change over time and its associated fast Fourier transform.}}{7}{figure.caption.18}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Napari widget to analyze the distance of the cell to the boundary. The left plot displays the distance of the daughter cells to the boundary, while the right plot shows the start and end distance localization of the mother cell (in green) and daughter cells (in red).}}{7}{figure.caption.19}\protected@file@percent }
+\newlabel{conclusions}{{}{7}{Conclusions}{section*.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\relax Conclusions}{7}{section*.20}\protected@file@percent }
+\newlabel{acknowledgements}{{}{7}{Acknowledgements}{section*.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\relax Acknowledgements}{7}{section*.21}\protected@file@percent }
+\newlabel{author-contributions}{{}{7}{Author Contributions}{section*.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\relax Author Contributions}{7}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{7}{section*.23}\protected@file@percent }
 \bibcite{Lucy74}{Luc74}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Napari widget to analyze the distance of the cell to the boundary. The left plot displays the distance of the daughter cells to the boundary, while the right plot shows the start and end distance localization of the mother cell (in green) and daughter cells (in red).}}{12}{figure.caption.19}\protected@file@percent }
-\newlabel{division-napari-start}{{7}{12}{Napari widget to analyze the distance of the cell to the boundary. The left plot displays the distance of the daughter cells to the boundary, while the right plot shows the start and end distance localization of the mother cell (in green) and daughter cells (in red)}{figure.caption.19}{}}
-\newlabel{acknowledgements}{{}{12}{Acknowledgements}{section*.21}{}}
-\@writefile{toc}{\contentsline {subsection}{\relax Acknowledgements}{12}{section*.21}\protected@file@percent }
-\newlabel{author-contributions}{{}{12}{Author Contributions}{section*.22}{}}
-\@writefile{toc}{\contentsline {subsection}{\relax Author Contributions}{12}{section*.22}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{References}{12}{section*.23}\protected@file@percent }
 \bibcite{Murray2008}{MBB{$^{+}$}08}
 \bibcite{Ronn2015}{RFB15}
 \bibcite{Rasse2020}{RHH20}
@@ -92,4 +84,4 @@
 \bibcite{scikit-image}{vdWSN{$^{+}$}14}
 \bibcite{Wolny2020}{WCV{$^{+}$}20}
 \bibcite{weigert2020}{WSH{$^{+}$}20}
-\gdef \@abspage@last{13}
+\gdef \@abspage@last{8}

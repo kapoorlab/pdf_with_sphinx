@@ -43,18 +43,6 @@ Writing Code
 
 .. code-block:: python
 
-  def iou3D(box_unet, centroid_star):
-    
-    ndim = len(centroid_star)
-    inside = False
-    
-    Condition = [Conditioncheck(centroid_star, box_unet,
-     p, ndim)
-     for p in range(0,ndim)]
-        
-    inside = all(Condition)
-    
-    return inside
   
   def Conditioncheck(centroid_centroid, box_unet, 
          p, ndim):
