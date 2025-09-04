@@ -89,10 +89,12 @@ Putting a figure
 For adding a figure it is like 
 
 .. figure:: Figures/radiation.jpg
+   :width: 70%
+   :align: center
+   :name: radiation
 
    Schematic representation showing the radiation spectrum with decreasing wavelength (in meters) from left to right, radio waves have wavelength of kilometers (that is what it needs to be in our houses from a transmitter tower), microwaves of about 5 cm (easy guess as the size of the box itself is about 15 cm or so) while the visible radiation is 400-800 nano meter.
 
-   :label:`radiation`
 
 Then we can refer to the figure by saying is shown in the Figure :ref:`radiation`
 

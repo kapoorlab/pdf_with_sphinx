@@ -145,11 +145,6 @@
   \fi%
 }
 
-% legend environment (in figures and formal tables)
-\ifthenelse{\isundefined{\DUlegend}}{
-  \newenvironment{DUlegend}{\small}{}
-}{}
-
 % hyperlinks:
 \ifthenelse{\isundefined{\hypersetup}}{
   \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
@@ -242,11 +237,9 @@ For writing code we can do it like this
 \subsection{Putting a figure%
   \label{putting-a-figure}%
 }
-For adding a figure it is like\begin{figure}[]\noindent\makebox[\columnwidth][c]{\includegraphics[width=\columnwidth]{Figures/radiation.jpg}}
-\caption{Schematic representation showing the radiation spectrum with decreasing wavelength (in meters) from left to right, radio waves have wavelength of kilometers (that is what it needs to be in our houses from a transmitter tower), microwaves of about 5 cm (easy guess as the size of the box itself is about 15 cm or so) while the visible radiation is 400-800 nano meter.}
-\begin{DUlegend}
+For adding a figure it is like\begin{figure}[]\noindent\makebox[\columnwidth][c]{\includegraphics[]{Figures/radiation.jpg}}\phantomsection\label{radiation}
 
-\DUrole{label}{radiation}\end{DUlegend}
+\caption{Schematic representation showing the radiation spectrum with decreasing wavelength (in meters) from left to right, radio waves have wavelength of kilometers (that is what it needs to be in our houses from a transmitter tower), microwaves of about 5 cm (easy guess as the size of the box itself is about 15 cm or so) while the visible radiation is 400-800 nano meter.}
 \end{figure}
 
 Then we can refer to the figure by saying is shown in the Figure \DUrole{ref}{radiation}
