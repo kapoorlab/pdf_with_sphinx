@@ -3,6 +3,8 @@
 \usepackage{cmap} % fix search and cut-and-paste in Acrobat
 \usepackage{ifthen}
 \usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{color}
 
 \usepackage[font={small,it},labelfont=bf]{caption}
 \usepackage{float}
@@ -117,6 +119,23 @@
 
 %%% Fallback definitions for Docutils-specific commands
 
+% class handling for environments (block-level elements)
+% \begin{DUclass}{spam} tries \DUCLASSspam and
+% \end{DUclass}{spam} tries \endDUCLASSspam
+\ifx\DUclass\undefined % poor man's "provideenvironment"
+ \newenvironment{DUclass}[1]%
+  {% "#1" does not work in end-part of environment.
+   \def\DocutilsClassFunctionName{DUCLASS#1}
+     \csname \DocutilsClassFunctionName \endcsname}%
+  {\csname end\DocutilsClassFunctionName \endcsname}%
+\fi
+
+% basic code highlight:
+\providecommand*\DUrolecomment[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\providecommand*\DUroledeleted[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\providecommand*\DUrolekeyword[1]{\textbf{#1}}
+\providecommand*\DUrolestring[1]{\textit{#1}}
+
 % custom inline roles: \DUrole{#1}{#2} tries \DUrole#1{#2}
 \providecommand*{\DUrole}[2]{%
   \ifcsname DUrole#1\endcsname%
@@ -149,7 +168,7 @@
         }}\maketitle
           \renewcommand{\leftmark}{PROC. OF KAPOORLABS}
           \renewcommand{\rightmark}{TITLE OF THE DOCUMENT}
-
+        
 \InputIfFileExists{page_numbers.tex}{}{}
 \newcommand*{\docutilsroleref}{\ref}
 \newcommand*{\docutilsrolelabel}{\label}
@@ -160,10 +179,43 @@
 \subsection{Introduction%
   \label{introduction}%
 }
+\begin{equation}
+\label{eq-schrodinger-stationary}
+\hat{H} \psi(\mathbf{r}) = E \psi(\mathbf{r})
+\end{equation}
+\begin{DUclass}{code}
+\begin{DUclass}{python}
+\begin{quote}
+\ttfamily\raggedright
+\DUrole{keyword}{def}\DUrole{whitespace}{~}\DUrole{name}{\DUrole{function}{iou3D}}\DUrole{punctuation}{(}\DUrole{name}{box\_unet}\DUrole{punctuation}{,}~\DUrole{name}{centroid\_star}\DUrole{punctuation}{):}\DUrole{whitespace}{~\\
+~\\
+}~~\DUrole{name}{ndim}~\DUrole{operator}{=}~\DUrole{name}{\DUrole{builtin}{len}}\DUrole{punctuation}{(}\DUrole{name}{centroid\_star}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
+}~~\DUrole{name}{inside}~\DUrole{operator}{=}~\DUrole{keyword}{\DUrole{constant}{False}}\DUrole{whitespace}{~\\
+~\\
+}~~\DUrole{name}{Condition}~\DUrole{operator}{=}~\DUrole{punctuation}{{[}}\DUrole{name}{Conditioncheck}\DUrole{punctuation}{(}\DUrole{name}{centroid\_star}\DUrole{punctuation}{,}~\DUrole{name}{box\_unet}\DUrole{punctuation}{,}\DUrole{whitespace}{~\\
+}~~~\DUrole{name}{p}\DUrole{punctuation}{,}~\DUrole{name}{ndim}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
+}~~~\DUrole{keyword}{for}~\DUrole{name}{p}~\DUrole{operator}{\DUrole{word}{in}}~\DUrole{name}{\DUrole{builtin}{range}}\DUrole{punctuation}{(}\DUrole{literal}{\DUrole{number}{\DUrole{integer}{0}}}\DUrole{punctuation}{,}\DUrole{name}{ndim}\DUrole{punctuation}{){]}}\DUrole{whitespace}{~\\
+~\\
+}~~\DUrole{name}{inside}~\DUrole{operator}{=}~\DUrole{name}{\DUrole{builtin}{all}}\DUrole{punctuation}{(}\DUrole{name}{Condition}\DUrole{punctuation}{)}\DUrole{whitespace}{~\\
+~\\
+}~~\DUrole{keyword}{return}~\DUrole{name}{inside}\DUrole{whitespace}{~\\
+~\\
+}\DUrole{keyword}{def}\DUrole{whitespace}{~}\DUrole{name}{\DUrole{function}{Conditioncheck}}\DUrole{punctuation}{(}\DUrole{name}{centroid\_centroid}\DUrole{punctuation}{,}~\DUrole{name}{box\_unet}\DUrole{punctuation}{,}\DUrole{whitespace}{~\\
+}~~~~~~~\DUrole{name}{p}\DUrole{punctuation}{,}~\DUrole{name}{ndim}\DUrole{punctuation}{):}\DUrole{whitespace}{~\\
+~\\
+}~~\DUrole{name}{condition}~\DUrole{operator}{=}~\DUrole{keyword}{\DUrole{constant}{False}}\DUrole{whitespace}{~\\
+~\\
+}~~\DUrole{keyword}{if}~\DUrole{name}{centroid\_star}\DUrole{punctuation}{{[}}\DUrole{name}{p}\DUrole{punctuation}{{]}}~\DUrole{operator}{>=}~\DUrole{name}{box\_unet}\DUrole{punctuation}{{[}}\DUrole{name}{p}\DUrole{punctuation}{{]}}\DUrole{whitespace}{~\\
+}~~\DUrole{operator}{\DUrole{word}{and}}~\DUrole{name}{centroid\_star}\DUrole{punctuation}{{[}}\DUrole{name}{p}\DUrole{punctuation}{{]}}~\DUrole{operator}{<=}~\DUrole{name}{box\_unet}\DUrole{punctuation}{{[}}\DUrole{name}{p}~\DUrole{operator}{+}~\DUrole{name}{ndim}\DUrole{punctuation}{{]}:}\DUrole{whitespace}{~\\
+~\\
+}~~~~~~~\DUrole{name}{condition}~\DUrole{operator}{=}~\DUrole{keyword}{\DUrole{constant}{True}}\DUrole{whitespace}{~\\
+~\\
+}~~\DUrole{keyword}{return}~\DUrole{name}{condition}
+\end{quote}
+\end{DUclass}
+\end{DUclass}
 \begin{figure}[]\noindent\makebox[\columnwidth][c]{\includegraphics[width=\columnwidth]{Figures/radiation.jpg}}
 \caption{Schematic representation showing the radiation spectrum with decreasing wavelength (in meters) from left to right, radio waves have wavelength of kilometers (that is what it needs to be in our houses from a transmitter tower), microwaves of about 5 cm (easy guess as the size of the box itself is about 15 cm or so) while the visible radiation is 400-800 nano meter.}
-\begin{DUlegend}
-
-\DUrole{label}{radiation}\end{DUlegend}
+\begin{DUlegend}\DUrole{label}{radiation}\end{DUlegend}
 \end{figure}
 \end{document}
