@@ -31,7 +31,7 @@ To install latest development version :
 
 You can write your rst file inside /src/pdf_with_sphinx/papers/proceedings/ and then create a pdf from it using the command
 
-$ source make_paper.sh papers/proceedings/
+$ ./make_paper.sh papers/proceedings/
 
 It will create the pdf file in the output, all your Figures should be placed inside the Figures folder which is inside the proceedings folder.
 
